@@ -1,0 +1,66 @@
+Vue 1.
+	Interface de connexion
+		Fonct. : Rentrer le Nom d'utilisateur
+		Fonct. : Rentrer le Mdp
+
+Vue 2.
+	Layout
+		Données : Nom d'utilisateur
+		Fonct. : Déconnexion
+		Données : Messages
+
+Vue Administrateur 1.
+	Liste des projets
+		Données : La liste
+		Fonct. : Ajouter un projet
+		
+Vue Administrateur 2.
+	Détail d'un projet
+		Données : Liste des tâches
+		Fonct. : Ajouter Tâche
+		Fonct. : Modification de l'état de la tâche (suspendre & relancer une tâche)
+		Fonct. : Supprimer une tâche
+		Données : Liste des personnes assignées au projet
+		Fonct. : Ajout d'un utilisateur
+		Fonct. : Supression d'un utilisateur
+
+Vue administrateur 2.5
+	Détail d'une tâche
+		Données : Liste des personnes assignées
+		Fonct. : Ajouter personne assignée
+		Fonct. : Supprimer personne assignée
+		Données : Statut de la tâche
+		Fonct. : Modifier le statut
+		Données : Nbre d'heures estimées
+		Données : Nbre d'heure déjà prestées
+		
+		
+Vue administrateur 3.
+	Création projet
+		Fonct. : Rentrer le nom du projet
+		Fonct. : Rentrer le nbres d'heures espérées
+		Fonct. : Définir le chef de projet
+		Fonct. : Ajouter/assigner des utilisateurs au projet
+		
+Vue administrateur 3.5
+	Création tâche
+		Fonct. : Rentrer le nom de la tâche
+		Fonct. : Rentrer les détails de la tâche
+		Fonct. : Définir les nbre d'heures espérées
+		Fonct. : Ajouter/assigner des utilisateurs à la tâche (optionnel)
+
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		

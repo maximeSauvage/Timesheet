@@ -1,0 +1,47 @@
+Créer plusieurs utilisateurs
+	un ou plusieurs administrateurs (= chefs, chef de projet)
+	plusieurs utilisateurs (= travailleurs, développeurs, ...)
+
+*********************************************************
+
+Se connecter en tant qu'administrateur.
+Créer projet et lui donner un nom et définir le chef de projet.
+Assigner des personnes pour travailler sur le projet. (Les personnes sont assignées d'office, elles n'ont pas leur mot à dire.)
+Fixer un nbr d'heures totales (pas obligé ?).
+Créer des tâches avec un nbre d'heures définies. Avec un ou plusieurs utilisateurs assignés (par l'administrateur).
+
+*********************************************************
+
+Se connecter en tant qu'utilisateur.
+Fixer dans un calendrier les heures prestées à telle ou telle tâche d'un tel projet.
+	Typiquement, l'utilisateur dit "j'ai travaillé de 9h à 11h sur cette tâche".
+	Le système s'occupe de faire la somme des heures prestée tâche par tâche et projet par projet.
+
+Le système vérifie qu'on ne dépasse pas le nombre d'heures par tâche et/ou par projet.
+	En cas de dépassement, le système affiche un message à l'utilisateur et préviens l'administrateur du dépassement.
+Le système passe le statut de la tâche à terminé dès lors que le nombre d'heures estimées est atteint
+L'utilisateur doit pouvoir signaler que la tâche est terminée avant que le nombre d'heure estimées soit prestées.
+
+*********************************************************
+
+Se connecter en tant qu'administrateur.
+Modifier un projet existant
+	Possibilité de modifier les Nom, nbre d'heures, ...
+	Possibilité de rajouter et de supprimer des personnes qui travailleront sur le projet
+	Possibilité d'ajouter une tâche
+	Possibilité de supprimer des tâches Seulement si elle son statut est en attente (= pas d'heure prestées)
+
+*********************************************************
+
+Se connecter en tant qu'administrateur.
+Modifier un projet existant
+Modifier une tâche
+	Fixer/modifier un statut : En attente (= pas d'heures prestées), en cours (= heures prestées mais pas terminée), suspendu (= pas possible de prester des heures) et terminé (= plus possible de prester des heures).
+
+*********************************************************
+
+Système de messagerie
+
+********************GOODIES*******************************
+
+Vue "statistique projet" permettant d'afficher l'avancement dans les tâches et dans le projet + résumé des dépassements éventuels.

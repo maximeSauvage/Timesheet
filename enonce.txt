@@ -1,0 +1,12 @@
+Projet POO
+
+Time sheet
+
+Gestion de projet de développement.
+Dois contenir un calendrier.
+
+Par groupe de deux personne.
+C’est qui on déjà fait le projet de gestion en Java ne peuvent se mettre ensemble et ce afin de diviser les compétences dans les groupes.
+
+
+C’est tout
