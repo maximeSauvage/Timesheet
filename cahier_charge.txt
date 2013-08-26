@@ -3,8 +3,8 @@ création d'un programme de timesheet avec les fonctionnalités suivantes:
 1.gestion des utlisateurs:
 
 -l'application doit pouvoir permettre d'identifier l'utilisateur actuel de l'application. 
- L'application n'est pas accessible aux utilisateurs non identifiés.
- Il doit être possible de créer des utlisateurs (première par la DB et si possible dans l'application)
+-l'application n'est pas accessible aux utilisateurs non identifiés.
+-il doit être possible de créer des utlisateurs (premièrement par la DB et si possible dans l'application)
 -l'application gère des rôles pour les utilisateurs : des rôles par rapport à l'application (administrateur ou simple utilisateur) et des rôles par rapport aux projets (chef de projet, participant au projet)
 
 2.gestion de projet:
@@ -34,6 +34,6 @@ création d'un programme de timesheet avec les fonctionnalités suivantes:
 *5.options :*
 
 -Vue "statistique projet" permettant d'afficher l'avancement dans les tâches et dans le projet + résumé des dépassements éventuels.
--Système de messagerie(avertissement de dépassemnt de projet , fin de prjet , etc...)
+-Système de messagerie(avertissement de dépassement de projet , fin de projet , etc...)
 
 
