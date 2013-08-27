@@ -1,0 +1,46 @@
+0.login 
+
+l'utilisateur se logue sur un compte précédemment créé et arrive sur un "dashboard" présentant les principales fonctionnalités dont il a accès décrites ci-dessous
+
+1.gestion des utilisateurs *réservé aux utilisateurs capable de gérer des utilisateurs*
+
+-Un administrateur peut créer un ou plusieurs utilisateurs.
+-un administrateur peut ajouter ou retirer des droits à un utilisateur
+Les droits sont les suivants : 
+   -ajouter/supprimer des utilisateurs
+   -ajouter/supprimer des droits aus utilisateurs
+   -être capable de devenir chef de projet
+   -être capable de prester sur un projet
+*options* ces doirts peuvent être regroupés sous forme de rôle : administrateur, chef de projet , etc...
+
+
+2.gestions des projets *réservé aux utilisateurs capable de devenir chef de projet*
+
+   *le terme utilisateurs reprend ici l'utilisateur capable de devenir chef de projet*
+
+-un utilisateur peut créer des projets il y sera automatiquement assigné comme chef de projet, il doit rentrer des utilisateurs assignable aux tâches
+
+   *le terme chef de projet reprend ici l'utilisateur assigné comme chef de projet au(x) projet(s) *
+
+-un chef de projet peut ajouter des tâches à un projet, il doit y asigner au moins un utilisateur
+
+-un chef de projet peut voir la liste des tâches d'un projet et leur étât:
+  -en attente (= pas d'heures prestées)
+  -en cours (= heures prestées mais pas terminée)
+  -suspendu (= pas possible de prester des heures)
+  -terminé (= plus possible de prester des heures), il faut indiquer aussi s'il y a dépassement ou pas 
+
+-un chef de projet peut décider de suspendre une tâche
+
+-un chef de projet peut voir la liste prestation d'un tâche , leur description et leurs heures prestées ainsi que si elle provoque un dépassement ou pas 
+
+
+2.rentrer une prestation *réservé aux utilisateurs capable de rentrer une prestation*
+
+- l'utilisateur a un calendrier sur lequel il peut cliquer sur un jour pour rentrer une prestation dans la liste de prestation disponible 
+- une prestation se compose d'un nombre d'heure ainsi que d'une description de la prestation
+
+3.Messagerie
+-un chef de projet est avertit lorsque une prestation fait dépasser le nombre d'heures disponible pour la tâche
+
+

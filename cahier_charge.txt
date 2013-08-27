@@ -1,18 +1,18 @@
 création d'un programme de timesheet avec les fonctionnalités suivantes:
 
-1.gestion des utlisateurs:
+1.gestion des utilisateurs:
 
 -l'application doit pouvoir permettre d'identifier l'utilisateur actuel de l'application. 
 -l'application n'est pas accessible aux utilisateurs non identifiés.
 -il doit être possible de créer des utlisateurs (premièrement par la DB et si possible dans l'application)
--l'application gère des rôles pour les utilisateurs : des rôles par rapport à l'application (administrateur ou simple utilisateur) et des rôles par rapport aux projets (chef de projet, participant au projet)
+-l'application gère des droits pour les utilisateurs : des droits par rapport à la gestion des utilisateurs et des rôles par rapport aux projets
 
 2.gestion de projet:
 
 -il sera possible de créer un ou plusieurs projet. Un projet est caractérisé par une description et un nombre d'heures prévues et un nombre prestées . Le nombre d'heure est calculé automatiquement sur base des heures prévues et prestées des tâches.
 -l'application permettra aux utilisateurs dont le rôle le permet (administrateur de l'application) de créer un projet et d'y assigner un chef de projet.
 -le chef de projet doit être avertit lorsqu'une prestations dépasse la limite d'heure disponible définie par la différence entre le nombre d'heures prévues et le nombre d'heures prévues.
--le chef de projet doit rajouter des utlisateurs aux projets pour les rendre disponible à l'assignation de tâches
+-le chef de projet doit rajouter des utilisateurs aux projets pour les rendre disponible à l'assignation de tâches
 
 3.gestion des taches:
 
