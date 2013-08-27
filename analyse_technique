@@ -1,0 +1,79 @@
+1.stockage des informations
+les différents informations à stocker :
+
+-la liste des utilisateurs (login + password)
+
+-la liste des droits des utilsateurs
+-les droits assignés aux utilisateurs
+
+-la liste des projet contenant chacune une éventuelle description ,chacun une liste d'utilisateurs ainsi que leur rôle et chacun une liste de tâches pour ce projet
+-la liste des tâches contenant chacune une description , chacune un nombre d'heure prévue et chacune une liste d'utlisateurs pouvant prester à cette tâche
+-la liste des prestation contenant chacune un nombre d'heure prestée, le prestataire ainsi qu'une description de la prestation 
+
+ce qui se traduit d'un point de vue programmatique :
+
+-Une classe users avec les champs suivants:
+  -login
+  -password
+  -liste des droits de cet utilisateur (définit par un enum de droits disponible dans cette même classe)
+
+-Une classe abstraite AbstractTask (nom à revoir ? ) contenant les méthodes et constantes communes aux projets, tâches et prestations:
+  -les enfants de cette Tasks + getter 
+  -le parent de cette Tasks + getter
+  -une description + getter/setter
+
+  -getAssignedUsers() retournant un map de type <Users,ProjectRole> 
+    (pour un projet ou pour une tâche retourne les utilisateurs assignés et pour une prestation , le prestataire)
+  -getWorkedHours() retournant un Integer
+    (retourne les heure prestées)
+  -getPlannedHours() retournant un Integer
+    (retourne les heures prévues)
+
+
+-Une classe projet implémentant la classe abstraite AbstractTask et contenant:
+  _les champs suivants:
+    -le map de type <Users,ProjectRole> des utilisateurs assignés au projet 
+    -l'enum des rôles diponibles d'un projet
+    
+  _les méthodes suivants:
+    -getter et setter des champs
+  _l'implémentation des méthodes suivantes:
+    -getAssignedUsers() : retourne le map des utilsateurs asssignés
+    -getWorkedHours() : retourne la somme des getWorkedHours des enfants
+    -getPlannedHours() : retourne la somme des getPlannedHours des enfants
+
+-Une Tâche projet implémentant la classe abstraite AbstractTask et contenant:
+  _les champs suivants:
+    -la liste des Users pouvant prester à cette tâche
+    -un nombre d'heure prévue pour cette tâche
+
+  _les méthodes suivants:
+    -getter et setter des champs
+  _l'implémentation des méthodes suivantes:
+    -getAssignedUsers() : retourne le map des utilisateurs  pouvant prester à cette tâche avec leur rôle reprit dans le getAssignedUsers du parent
+    -getWorkedHours() : retourne la somme des getWorkedHours des enfants
+    -getPlannedHours() : retourne le nombre d'heure prévue à cette tâche
+
+-Une Prestation projet implémentant la classe abstraite AbstractTask et contenant:
+  _les champs suivants:
+    -le prestataire
+    -un nombre prestée pour cette tâche
+
+  _les méthodes suivants:
+    -getter et setter des champs
+  _l'implémentation des méthodes suivantes:
+    -getAssignedUsers() : retourne le map du prestataire avec son rôle reprit dans le getAssignedUsers du parent
+    -getWorkedHours() : retourne les heures prestées
+    -getPlannedHours() : retourne null
+
+2.contrôle et mise à disposition de l'information
+ - classes de CRUD 
+ - classes mettant à dispotion les ressources selon la norme RESTFUL (web)
+
+ce qui se traduit d'un point de vue programmatique :
+_CRUD:
+  
+_RESTFUL:
+  
+  
+
